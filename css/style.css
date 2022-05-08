@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+    font-family: 'IBM  Plex Sans Arabic', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+#date {
+    text-transform: uppercase;
+}
+
+.header {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.note {
+    margin: auto;
+}
+
+.pin {
+    width: 525px;
+    margin: auto;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    font-size: 12px;
+}
+
+textarea {
+    background-color: #181a1b;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+input {
+    background-color: #181a1b;
+    color: #FFFFFF;
+}
+
+/* dark mode */
+.dark {
+    background-color: #141414;
+    color: #FFFFFF;
+}
+
+.bottom {
+    padding: 15px;
+    text-align: center;
+}
