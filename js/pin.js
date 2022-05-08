@@ -14,8 +14,3 @@ function pin2() {
   document.getElementById("txtoutput2").innerHTML = y;
   alert(y);
 }
-
-
-function clear() {
-  document.getElementById("output").value = "";
-}
