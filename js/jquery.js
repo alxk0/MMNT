@@ -1,4 +1,5 @@
-// jquery store note1 + note2 to client-side localStorage
+// jquery to store note1 + note2 to client-side localStorage
+// from https://codepen.io/NikxDa/pen/vxjgpb
 
 $(document).ready (function () {
     $("*[data-store]").each(function () {
