@@ -29,6 +29,13 @@ body {
     margin: auto;
 }
 
+.pinoutput{
+    vertical-align: top;
+    text-align: left;
+    /* preserves line breaks and spaces of key value */
+    white-space: pre;
+}
+
 a:link, a:visited, a:hover, a:active {
     color: white;
     font-size: 12px;
