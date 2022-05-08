@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>MMNT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <!-- load text into text1 + text2 -->
+    <body>
+        <div class = "header">
+            <p>&nbsp;</p>
+            <h1>MMNT</h4>
+            <p>&nbsp;</p>
+            <h2><p id="date"><script>document.write(new Date().toDateString()); </script></p></h2>
+            <p>&nbsp;</p>
+        </div>
+
+        <div class = "container">
+            <div class="note">
+                <div class = "note">
+                    <!-- print today's date-->
+                    <h2>NOTE I.</h2>
+                    <!-- text input -->
+                    <textarea data-store="1" style="width: 500px; height: 500px;" id="txtinput1" rows="9" wrap="virtual" cols=48></textarea><br>
+                    <!-- buttons -->
+                    <p align="right">
+                    <input type="button" value="download" onclick="download();">
+                    <input type="button" id="pin" value="pin" onclick="pin1();">
+                    <script src="js/pin.js"></script>
+                </div>
+
+                <div class="pin">
+                    <h2>PIN I.</h2>
+                    <p>&nbsp;</p>
+                    <!-- write pin1 -->
+                    <script>
+                        const value1 = localStorage.getItem('pin1');
+                        document.write(`${value1}`);
+                    </script>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class = "note">
+                    <!-- print today's date-->
+                    <h2>NOTE II.</h2>
+                    <!-- text input -->
+                    <textarea data-store="2" style="width: 500px; height: 500px;" id="txtinput2" rows="9" wrap="virtual" cols=48></textarea><br>
+                    <!-- buttons -->
+                    <p align="right">
+                    <input type="button" value="download" onclick="download();">
+                    <input type="button" id="pin" value="pin" onclick="pin2();">
+                    <script src="js/pin.js"></script>
+                </div>
+
+                <div class="pin">
+                    <h2>PIN II.</h2>
+                    <p>&nbsp;</p>
+                    <!-- write pin2 -->
+                    <script>
+                        const value2 = localStorage.getItem('pin2');
+                        document.write(`${value2}`);
+                    </script>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <!-- dark mode toggle-->
+            <input type="button" id="theme-switcher" class="btn" value="dark / light">
+            <script src="js/darklight.js"></script>
+        </div>
+    </body>
+</html>
