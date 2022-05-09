@@ -10,30 +10,46 @@ body {
 }
 
 .header {
+    width: 100%;
     text-align: center;
+}
+
+.notecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.pincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .container {
     max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.note {
     margin: auto;
 }
 
 .pin {
+    margin-top: 10px;
+    display: inline-block;
     width: 525px;
-    margin: auto;
 }
 
-.pinoutput{
-    vertical-align: top;
-    text-align: left;
+.row {
+    display: flex; /* equal height of the children */
+}
+
+.pinoutput {
     /* preserves line breaks and spaces of key value */
     white-space: pre;
+}
+
+#button {
+    text-align: right;
 }
 
 a:link, a:visited, a:hover, a:active {
