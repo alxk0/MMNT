@@ -13,8 +13,7 @@ Alex Kim, 2022-05-08
 
 # BUILT WITH
 
-    - CS50 IDE, VS Code
-    - JQuery
+    - HTML, CSS, JS
 
 
 # INSTALLATION
